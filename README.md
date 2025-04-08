@@ -65,9 +65,9 @@ No seu projeto de sorteio, podemos identificar algumas responsabilidades distint
 
 Neste caso, podemos organizar o código assim:
 
-​	 1️⃣ **Classe `Sorteador`** → Responsável por gerar os números aleatórios
- 	2️⃣ **Classe `JogoSorteio`** → Responsável pelo fluxo do jogo (entrada de dados, chamadas para o `Sorteador`, exibição dos números)
-​	 3️⃣ **Classe `Main`** → Apenas para iniciar a execução do jogo
+1. **Classe `Sorteador`** → Responsável por gerar os números aleatórios
+2. **Classe `JogoSorteio`** → Responsável pelo fluxo do jogo (entrada de dados, chamadas para o `Sorteador`, exibição dos números)
+3. **Classe `Main`** → Apenas para iniciar a execução do jogo
 
 ## Considerações Finais
 
