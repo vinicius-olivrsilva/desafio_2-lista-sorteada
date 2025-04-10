@@ -21,6 +21,12 @@ public class Sorteador {
         if (qtdNumerosParaSortear > (valorMax - valorMin + 1)) {
             throw new IllegalArgumentException("Quantidade maior do que o intervalo disponível!");
         }
+        if (qtdNumerosParaSortear < 1) {
+            throw new IllegalArgumentException("A quantidade de números a sortear deve ser pelo menos 1.");
+        }
+        if (valorMin > valorMax) {
+            throw new IllegalArgumentException("O valor mínimo não deve ser maior que o valor máximo");
+        }
 
         if (!numerosSorteados.isEmpty()){
             numerosSorteados.clear();
