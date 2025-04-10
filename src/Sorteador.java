@@ -18,8 +18,12 @@ public class Sorteador {
     // Sorteia o numero entre o minimo e o maximo e adiciona na lista
     protected void sorteiaNumeros(int qtdNumerosParaSortear, int valorMin, int valorMax){
         // Verificação de segurança: evitar loop infinito
-        if (qtdNumerosParaSortear > (valorMin - valorMax + 1)) {
+        if (qtdNumerosParaSortear > (valorMax - valorMin + 1)) {
             throw new IllegalArgumentException("Quantidade maior do que o intervalo disponível!");
+        }
+
+        if (!numerosSorteados.isEmpty()){
+            numerosSorteados.clear();
         }
 
         while (numerosSorteados.size() < qtdNumerosParaSortear){

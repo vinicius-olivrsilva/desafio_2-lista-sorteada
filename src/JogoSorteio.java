@@ -15,5 +15,14 @@ public class JogoSorteio {
 
         sorteador.sorteiaNumeros(qtdDeNumeros, valorMinimo, valorMaximo);
         System.out.println(sorteador.getNumeros());
+        gerarNovamente();
+    }
+
+    public void gerarNovamente(){
+        System.out.println("\n### Deseja gerar novamente? (S/N) ###");
+        char sim = scanner.next().charAt(0);
+        if (sim == 's' || sim == 'S'){
+            inicio();
+        }
     }
 }
